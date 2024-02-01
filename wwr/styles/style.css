@@ -3,7 +3,6 @@
 
     max-width: 1600px;
     margin: 0 auto;
-    width: 60%;
     
 }
 
@@ -12,6 +11,11 @@ nav a {
     color:#FCFCFC;
     text-decoration: none;
 
+}
+
+#hero-image {
+
+    width:100%;
 }
 #hero-msg h1 {
     text-align: center;
