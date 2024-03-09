@@ -205,3 +205,50 @@ footer p {
 footer p a:hover {
     text-decoration: underline;
 }  
+
+
+@media screen and (max-width: 600px) {
+    .content {
+        width: 100%;
+    }
+
+    main {
+        display: block;
+    }
+
+    header {
+        grid-template-columns: auto;
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+    }
+
+    #banner h1 {
+        font-size: 2em;
+    }
+
+    #banner-img {
+        display: none;
+    }
+
+    main section {
+        padding: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+}
