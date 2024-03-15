@@ -340,4 +340,17 @@ form {
     footer p {
         font-size: 1em;
     }
+    form {
+        width: 90%;
+        max-width: none;
+        padding: 0.5em;
+    }
+
+    textarea {
+        width: calc(100% - 20px);
+    }
+
+    label {
+        font-size: 0.7em;
+    }
 }
