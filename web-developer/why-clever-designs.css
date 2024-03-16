@@ -95,6 +95,7 @@ header{
     display: grid;
     grid-template-columns: 150px auto;
     padding: 25px 50px;
+    margin-bottom: 100px;
 }
 nav a:hover{
     background-color: #5D737E; 
