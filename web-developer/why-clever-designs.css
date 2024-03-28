@@ -67,15 +67,52 @@ main section img {
     grid-column: 1/3;
     grid-row: 4/5;
 }
+#reasons-1 img{
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    width: 45%;
+    margin: 50px;
+    height: auto;
+}
+#reasons-1 p{
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    margin: 50px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
 #reasons-2 {
 
     display: flex;
     grid-column: 1/3;
     grid-row: 5/6;
 }
+#reasons-2 img{
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 5/6;
+    width: 100%;
+    margin: 50px;
+    height: auto;
+}
+#reasons-2 p{
+    display: flex;
+    grid-column: 1/3;
+    grid-row: 5/6;
+    margin: 50px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
 
 h1 {
-    color:#08415C
+    color:#08415C;
+    font-family: var(--heading-font);
 }
 body{
     background-color: #FCFCFC; 
@@ -95,7 +132,7 @@ header{
     display: grid;
     grid-template-columns: 150px auto;
     padding: 25px 50px;
-    margin-bottom: 100px;
+    
 }
 nav a:hover{
     background-color: #6B818C; 
@@ -103,7 +140,22 @@ nav a:hover{
 .headline {
 
     grid-column: 1/3;
-    grid-row: 1/3;
+    grid-row: 1/2;
+    z-index: 1;
+}
+.headline img{
+
+    width: 40%;
+    height: auto;
+    border: 10px dashed #6B818C;
+}
+#background {
+    background-color: #F1BF98;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    
+    height: 600px;
+    z-index: 0;
 }
 
 #mini-headline {
@@ -111,7 +163,13 @@ nav a:hover{
     grid-row: 3/4;
 
 }
+#mini-headline h1{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    margin: 80px;
+    
 
+}
 #good-work{
 
     width:50%;
@@ -173,48 +231,74 @@ footer .social img
 }
 
 
-
-
-@media screen and (max-width: 900px) {
-    #hero, .home-grid {
-        display: block;
-        height: auto;
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 120px;
+        margin-left: 10px;
     }
-    nav, footer {
+
+    nav {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
+
     nav a {
         display: block;
-        padding: 15px;
+        padding: 10px;
+        font-size: 14px;
     }
-    #hero {
-        margin-top: 0;
+
+    body {
+        font-size: 14px;
     }
-    #hero-msg {
-        margin-top: 0;
+
+    main section {
+        margin: 5px;
     }
-    #hero-msg h4 {
-        display: none;
+
+    #background img,
+    .headline img,
+    #good-work,
+    #innovation {
+        width: 100%;
     }
-    #hero-msg h1 {
-        color: #6f7364;
+
+    #reasons-1,
+    #reasons-2 {
+        max-width: 100%;
+        margin: 5px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-    .home-title {
-        font-size: 25px;
+
+    #reasons-1 p,
+    #reasons-2 p {
+        margin: 5px;
     }
-    .rivers-card, .camping-card, .rapids-card { 
-        margin: 50px auto;
-        width: 60%;
+
+    #reasons-1 img,
+    #reasons-2 img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 5px;
     }
-    #special-background {
-        display: none;
+
+    #reasons-2 img {
+        order: -1; 
     }
-    .mountains, .msg {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
-    }
+
     footer {
-        margin-top: 25px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    footer a,
+    footer p {
+        font-size: 14px;
     }
 }
