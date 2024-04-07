@@ -31,6 +31,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     color: #08415C;
+    font-family: var(--paragraph-font);
 
 
 }
@@ -57,13 +58,16 @@ main section img {
 }
 
 
-
+body p{
+    font-family: var(--heading-font);
+}
 body{
     background-color: #FCFCFC; 
-    font-family: var(--paragraph-font);
+   
     font-size: 22px;
     padding: 0;
     margin: 0;
+    
 }
 
 .headline {
@@ -72,6 +76,7 @@ body{
     z-index: 1;
     border: 10px dotted #6B818C;
     padding: 25px;
+    font-family: var(--heading-font);
 }
 
 #background {
@@ -84,7 +89,7 @@ body{
 
 }
 #basic {
-
+    font-family: var(--heading-font);
     display: flex;
     grid-column: 1/3;
     grid-row: 2/3;
@@ -114,6 +119,7 @@ body{
     display: flex;
     grid-column: 1/3;
     grid-row: 3/4;
+    font-family: var(--heading-font);
 }
 #standard img{
     display: flex;
@@ -133,6 +139,7 @@ body{
     align-items: center;
     align-content: center;
     padding: 50px;
+    
 }
 #premium {
     display: flex;
